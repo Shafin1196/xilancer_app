@@ -115,7 +115,7 @@ class _RecentJobState extends ConsumerState<RecentJob> {
                           Container(
                             padding: EdgeInsets.all(height * 0.005),
                             width: width * 0.25,
-                            height: height * 0.03,
+                            height: height * 0.033,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(12),
                               color: scaffoldBg,
@@ -128,11 +128,11 @@ class _RecentJobState extends ConsumerState<RecentJob> {
                           ),
                         ],
                       ),
-                      SizedBox(height: height * 0.016),
+                      SizedBox(height: height * 0.013),
                       Container(
                         padding: EdgeInsets.all(height * 0.01),
                         width: width * 0.9,
-                        height: height * 0.045,
+                        height: height * 0.05,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           color: scaffoldBg,
