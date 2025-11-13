@@ -5,6 +5,16 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+packages(
+http(fetch data from api),
+riverpod(manage state like pagecontroller,textcontroller also used for fethcing data from api),
+smooth_page_indicator(used on pageview),
+google_fonts(style text widgets),
+).
+constant.dart:
+screenShoot:
+<img width="396" height="822" alt="image" src="https://github.com/user-attachments/assets/99c8e108-5cbc-4478-aea4-eb44239f9948" />
+
 
 A few resources to get you started if this is your first Flutter project:
 
