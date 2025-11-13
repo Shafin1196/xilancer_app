@@ -79,7 +79,7 @@ class BannerCard extends ConsumerWidget {
         Positioned(
           right: width*0.04,
           bottom: -(height*0.01),
-          child: Image.asset(image, height: 165, width: 180, fit: BoxFit.cover),
+          child: Image.asset(image, height: height*0.19, width: width*0.45, fit: BoxFit.cover),
         ),
         Positioned(
           right: width * .4,

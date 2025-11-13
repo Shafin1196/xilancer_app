@@ -43,7 +43,6 @@ class _ScrollablesState extends ConsumerState<Scrollables> {
               PopularServices(),
               textHeading(width, height, "Recent Job Posted"),
               RecentJob(),
-              
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
