@@ -54,7 +54,11 @@ class _RecentJobState extends ConsumerState<RecentJob> {
                             backgroundColor: scaffoldBg,
                             radius: width * 0.045,
                             child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                setState(() {
+                                  jobList[index]=currentData.copyWith(favorite: !currentData.favourite);
+                                });
+                              },
                               icon: Icon(
                                 currentData.favourite
                                     ? Icons.favorite
