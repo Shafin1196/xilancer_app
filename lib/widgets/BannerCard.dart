@@ -7,9 +7,10 @@ import 'package:xilancer_app/constant/constant.dart';
 import 'package:xilancer_app/providers/future_providers.dart';
 
 class BannerCard extends ConsumerWidget {
-  final String text;
+  // final String text;
   final String image;
-  BannerCard({required this.text, required this.image});
+  // required this.text, required this.image
+  BannerCard({ required this.image});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -29,17 +30,17 @@ class BannerCard extends ConsumerWidget {
                     children: [
                       TextSpan(
                         text: 'Find the Perfect Freelancer for\n',
-                        style: GoogleFonts.poppins(color: Colors.white, fontSize: 16),
+                        style: GoogleFonts.poppins(color: Colors.white, fontSize: width*0.04),
                       ),
                       TextSpan(
                         text: 'Any ',
-                        style: GoogleFonts.poppins(color: Colors.white, fontSize: 16),
+                        style: GoogleFonts.poppins(color: Colors.white, fontSize: width*0.04),
                       ),
                       TextSpan(
                         text: 'Project',
                         style: GoogleFonts.poppins(
                           color: Colors.white,
-                          fontSize: 19,
+                          fontSize: width*0.045,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -52,10 +53,10 @@ class BannerCard extends ConsumerWidget {
         ),
         Positioned(
           left: width*.04,
-          bottom: 30,
+          bottom: height*0.04,
           child: SizedBox(
-            height:  35,
-            width: 105,
+            height:  height*0.04,
+            width: width*0.28,
             child: ElevatedButton(
                       onPressed: (){
                     
@@ -76,13 +77,13 @@ class BannerCard extends ConsumerWidget {
           ),
         ),
         Positioned(
-          right: 10,
-          bottom: -11,
+          right: width*0.04,
+          bottom: -(height*0.01),
           child: Image.asset(image, height: 165, width: 180, fit: BoxFit.cover),
         ),
         Positioned(
           right: width * .4,
-          bottom: 20,
+          bottom: height*0.019,
           child: SmoothPageIndicator(
             controller: controller,
             count: 3,

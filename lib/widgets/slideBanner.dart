@@ -32,15 +32,12 @@ class _SlidingBannerState extends ConsumerState<SlidingBanner> {
               controller: controller,
               children:  [
                 BannerCard(
-                  text: "Fast. Reliable. Hassle-Free Parcel Delivery.",
                   image: "assets/images/boy.png",
                 ),
                 BannerCard(
-                  text: "Fast. Reliable. Hassle-Free Parcel Delivery.",
                   image: "assets/images/boy.png",
                 ),
                 BannerCard(
-                  text: "Fast. Reliable. Hassle-Free Parcel Delivery.",
                   image: "assets/images/boy.png",
                 ),
                

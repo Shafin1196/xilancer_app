@@ -15,6 +15,7 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     final height = screenHeight(ctx: context);
+    // ignore: unused_local_variable
     final width = screenWidth(ctx: context);
     return BottomNavigationBar(
         type: BottomNavigationBarType.fixed, 

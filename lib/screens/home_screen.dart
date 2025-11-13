@@ -5,7 +5,7 @@ import 'package:xilancer_app/constant/const_methods.dart';
 import 'package:xilancer_app/constant/constant.dart';
 import 'package:xilancer_app/widgets/bottomNav.dart';
 import 'package:xilancer_app/widgets/greetings.dart';
-import 'package:xilancer_app/widgets/slideBanner.dart';
+import 'package:xilancer_app/widgets/scrollable.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({super.key});
@@ -23,10 +23,9 @@ class _HomeState extends ConsumerState<Home> {
     final width = screenWidth(ctx: context);
     return Scaffold(
       backgroundColor: scaffoldBg,
-      appBar: AppBar(toolbarHeight: height * 0.03, backgroundColor: scaffoldBg),
+      // appBar: AppBar(toolbarHeight: height * 0.03, backgroundColor: scaffoldBg),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
+        child:  Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Greetings(),
@@ -76,38 +75,24 @@ class _HomeState extends ConsumerState<Home> {
                       child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.tune,),
-                      
                     ),
                     ),
                     
                   ),
                 ),
               ),
-              textHeading(width, height,"Popular Categories"),
-              Text("categories builder"),
-              SlidingBanner(),
-              textHeading(width, height, "Popular Services"),
-              textHeading(width, height, "Recent Job Posted"),
-              textHeading(width, height, "Top Rated Freelancers"),
-              Text("top rated hre"),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Scrollables(),
+                ),
+              ),
             ],
           ),
-        ),
+        
       ),
       bottomNavigationBar: BottomNav(),
     );
   }
 
-  Padding textHeading(double width, double height,String text) {
-    return Padding(
-              padding: EdgeInsets.symmetric(horizontal: width*0.04,vertical:height*0.01 ),
-              child: Text(
-                text,
-                style: GoogleFonts.poppins(
-                  fontSize: width*0.045,
-                  fontWeight: FontWeight.w500
-                ),
-              ),
-            );
-  }
+  
 }

@@ -5,7 +5,6 @@ import 'package:xilancer_app/screens/home_screen.dart';
 void main() {
   runApp(ProviderScope(child: XilanserApp()));
 }
-
 class XilanserApp extends StatelessWidget {
   const XilanserApp({super.key});
   @override
