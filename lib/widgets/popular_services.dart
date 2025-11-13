@@ -80,7 +80,7 @@ class PopularServices extends ConsumerWidget {
                                             onPressed: (){
                                         
                                           }, 
-                                          icon: Icon(Icons.favorite_outline,size: width*0.06,),
+                                          icon: Icon(Icons.favorite_outline,size: width*0.05,),
                                           ),
                                         ),
                                       ),
