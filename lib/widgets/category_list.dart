@@ -31,13 +31,13 @@ class Caterories extends ConsumerWidget {
               top: height * 0.018
             ),
             child: Container(
-              padding:EdgeInsets.all(width*0.024) ,
+              padding:EdgeInsets.symmetric(horizontal: width*0.024,vertical: height*0.008) ,
               width: width*0.26,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   categoryIcons[index],
-                  Text(categoryNames[index]),
+                  Text(categoryNames[index],style: TextStyle(fontSize: width*0.03),),
                 ],
               )
             ),
